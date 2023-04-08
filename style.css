@@ -1,0 +1,144 @@
+html {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+footer,
+section {
+    padding: 5rem;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+footer {
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.inspecionar {
+    border: 5px solid red;
+}
+
+.itens-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    /*padding espaçamento para dentro da borda / borda para dentro
+    aceita até quatro valores no sentido horário*/
+    padding: 2rem 6rem;
+}
+
+.nav-links {
+    /*display flex responsavel por definir como os item vão estar sendo mostrado na pagina (flex - encaixa todos os ementos de forma flexivel*/
+    display: flex;
+    /*Responsavel por dizer como os elmentos vão estar justificados dentro da pagina*/
+    justify-content: flex-end;
+    /*define os espaços entre elementos de um display flexivel*/
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    /*text-decoration none remove a linha embaixo do link*/
+    text-decoration: none;
+}
+
+.main {
+    margin-bottom: 5rem;
+}
+
+.avatar {
+    border-radius: 100%;
+    width: 24rem;
+    height: 24rem;
+    margin-right: 10rem;
+}
+
+.main-title {
+    font-size: 4rem;
+}
+
+.main-description {
+    margin: 4rem 0;
+}
+
+.button {
+    border-radius: 0.2rem;
+    background-color: #0039CC;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.about {
+    background-color: #162340;
+}
+
+.project {
+    margin: 4rem 0;
+}
+
+.project-image {
+    width: 24rem;
+    height: 24rem;
+    margin-right: 2.5rem;
+    border-radius: 0.6rem;
+}
+
+.projec-title {
+    font-size: 3rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .itens-center {
+        flex-direction: column;
+    }
+
+    footer,
+    section {
+        padding: 5rem;
+    }
+
+    .main {
+        margin-bottom: 2rem;
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .project-image {
+        width: 38rem;
+        height: auto;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .avatar {
+        width: 18rem;
+        height: 18rem;
+
+    }
+
+}
